@@ -4,8 +4,16 @@ const colors = require('picocolors')
 const confirm = require('@inquirer/confirm').default
 const invariant = require('./invariant')
 const { SERVICE_WORKER_BUILD_PATH } = require('../config/constants')
+const cowsay = require('cowsay')
 
 module.exports = async function init(args) {
+  console.log(
+    cowsay.say({
+      text: 'MSW!',
+      e: 'oO',
+      T: 'U ',
+    }),
+  )
   const CWD = args.cwd || process.cwd()
   const publicDir = args._[1] ? normalizePath(args._[1]) : undefined
 
