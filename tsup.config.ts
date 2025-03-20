@@ -60,7 +60,7 @@ const browserConfig: Options = {
   external: [mswCore, ecosystemDependencies],
   format: ['esm', 'cjs'],
   outDir: './lib/browser',
-  bundle: true,
+  bundle: false,
   splitting: false,
   sourcemap: true,
   dts: true,
