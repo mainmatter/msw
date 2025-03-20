@@ -14,6 +14,15 @@ const IS_MOCKED_RESPONSE = Symbol('isMockedResponse')
 const activeClientIds = new Set()
 
 self.addEventListener('install', function () {
+  if (false) {
+  }
+
+  if (false) {
+  }
+
+  if (false) {
+  }
+
   self.skipWaiting()
 })
 
