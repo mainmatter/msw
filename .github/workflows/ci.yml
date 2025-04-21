@@ -73,6 +73,7 @@ jobs:
         run: pnpx @gravityci/cli 'lib/**/*.js' 'cli/**/*.js' 'config/constants.js' 'config/scripts/postinstall.js'
         env:
           GRAVITY_TOKEN: ${{ secrets.GRAVITY_TOKEN }}
+          GRAVITY_HOST: ${{ vars.GRAVITY_HOST }}
 
       - name: Cache build output
         uses: actions/cache@v4
